@@ -15,9 +15,6 @@ class SinglePlayerGameTest {
 		partie = new PartieMonoJoueur();
 	}
 
-	/**
-	 * Si on envoie toutes les 20 boules dans la rigole, le score final est 0
-	 */
 	@Test
 	void toutDansLaRigole() {
 		lancerPlusieurs(20, 0);
