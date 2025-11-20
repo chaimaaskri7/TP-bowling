@@ -15,6 +15,7 @@ class SinglePlayerGameTest {
 		partie = new PartieMonoJoueur();
 	}
 
+	
 	@Test
 	void toutDansLaRigole() {
 		lancerPlusieurs(20, 0);
@@ -59,7 +60,6 @@ class SinglePlayerGameTest {
 
 	@Test
 	void testPerfectGame() {
-		// 12 boules à 10 points
 		lancerPlusieurs(12, 10);
 		assertEquals(300, partie.score());
 		assertTrue(partie.estTerminee());
@@ -77,7 +77,6 @@ class SinglePlayerGameTest {
 		assertEquals(84, partie.score());
 	}
 
-	// Quelques methodes utilitaires pour faciliter l'écriture des tests
 	private boolean lancerPlusieurs(int n, int quilles) {
 		boolean leTourcontinue = false;
 		for (int i = 0; i < n; i++) {
